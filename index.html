@@ -14,7 +14,7 @@
     
 <header class="header">
     <div class="header__item">
-        <div class="header__menu">
+        <div class="header__menu open-menu-btn" data-menu-id="main_menu">
             <img src="./public/images/main_menu.png" alt="">
         </div>
         <div class="header__logo">
@@ -34,15 +34,15 @@
             <a href="#" class="header__hello">Hello, John!</a>
             <img src="./public/images/avatar.png" alt="" class="header__avatar">
         </div>
-        <div class="header__submenu">
+        <div class="header__submenu open-menu-btn" data-menu-id="sub_menu">
             <img src="./public/images/submenu.png" alt="">
         </div>
     </div>
 </header>
 
-<div class="menu main">
+<div class="menu" id="main_menu">
     <div class="menu__main">
-        <img src="./public/images/exit__icon.png" alt="" class="menu__quit">
+        <img src="./public/images/exit__icon.png" alt="" class="close-menu-btn">
         <h1 class="menu__title">Navigation</h1>
         <div class="menu__item">
             
@@ -55,11 +55,13 @@
             <a href="#" class="menu__link"><i class="fas fa-sign-out-alt"></i>   Log out</a>
         </div>  
     </div>
+
+    
 </div>
 
-<div class="menu sub">
+<div class="menu" id="sub_menu">
     <div class="supmenu">
-        <img src="./public/images/exit__icon.png" alt="" class="menu__quit">
+        <img src="./public/images/exit__icon.png" alt="" class="close-menu-btn">
         <h1 class="menu__title">Navigation</h1>
         <div class="menu__item">
 
@@ -93,7 +95,7 @@
                 <div class="search__label">Search</div>
                 <img src="./public/images/search_icon.png" alt="" class="search__icon">
             </div>
-            
+
             <div class="nav">
                 <a href="#" class="nav__text">Home</a>
                 >

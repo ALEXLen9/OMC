@@ -1,24 +1,35 @@
 
+function closeAllMenus() {
+    const $menus = $('.menu');
+
+    $menus.removeClass('active');
+    $('body').removeClass('hidded');
+}
+
 function initMenu() {
-    const $menu = $('.main');
-    const $submenu = $('.sub');
+    const $menus = $('.menu');
+    const $openBtns = $('.open-menu-btn');
+    const $closeBtns = $('.close-menu-btn');
 
-    $('.header__menu').on('click', () => {
-        $menu.toggleClass('active');
+    $menus.on('click', (event) => {
+        if(event.target.matches('.menu'))
+        {
+            closeAllMenus();
+        }
     });
 
-    $('.header__submenu').on('click', () => {
-        $submenu.toggleClass('active');
+    $openBtns.on('click', (event) => {
+        const btn = event.target.closest('[data-menu-id]');
+        const menuId = btn.getAttribute('data-menu-id');
+
+        closeAllMenus();
+        $('#' + menuId).addClass('active');
+
+        $('body').addClass('hidded');
     });
 
-    $('.menu__quit').on('click', () => {
-        $menu.removeClass('active');
-        $submenu.removeClass('active');
-    });
-
-    $('.menu').on('click', () => {
-        $menu.removeClass('active');
-        $submenu.removeClass('active');
+    $closeBtns.on('click', () => {
+       closeAllMenus();
     });
 }
 
