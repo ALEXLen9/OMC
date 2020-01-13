@@ -1,0 +1,20 @@
+.title {
+    display: flex;
+}
+
+.title__icon {
+    padding: 0.33rem 1rem;
+    padding-left: 0;
+}
+
+.title__name {
+    font-size: 1.48rem;
+    color: $black;
+    font-weight: 600;
+}
+
+.title__subname {
+    font-size: 0.84rem;
+    color: $gray_text;
+    font-weight: 400;
+}

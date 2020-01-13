@@ -1,0 +1,84 @@
+.share {
+    background-color: $white;
+    border: 1px solid rgba($color: $gray_text, $alpha: 0.3);
+    border-radius: 0.3rem;
+    box-shadow: 0 1px 10px $gray_btn;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 3rem;
+    margin: 2rem 0;
+
+    @media screen and ($mobile) {
+        height: 4rem;
+    }
+
+    @media screen and ($mobile-sm) {
+        flex-wrap: wrap;
+        height: 5.5rem;
+    }
+}
+
+.share__lists {
+    cursor: pointer;
+    display: flex;
+    width: 40%;
+
+    @media screen and ($mobile) {
+        width: 70%;
+    }
+
+    @media screen and ($mobile-sm) {
+        width: 100%;
+    }
+
+}
+
+.share__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 33.3%;
+
+    font-size: 0.92rem;
+    color: $orange;
+    font-weight: 400;
+
+    border-right: 1px solid rgba($color: $gray_text, $alpha: 0.3);
+    padding: 1rem;
+
+    transition: color 0.2s linear;
+
+    &:hover {
+
+        .share__list,
+        .share__text {
+            color: rgba($color: $orange, $alpha: 0.6);
+        }
+    }
+
+    @media screen and ($mobile-sm) {
+        justify-content: center;
+    }
+}
+
+.share__text {
+    font-size: 0.92rem;
+    color: $orange;
+    font-weight: 400;
+
+    transition: color 0.2s linear;
+}
+
+.share__btn {
+    margin: 0 0.5rem;
+
+    @media screen and ($mobile-sm) {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}

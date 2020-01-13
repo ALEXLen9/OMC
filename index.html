@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="public/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/68dc8f609d.js" crossorigin="anonymous"></script>
+    <title>OMC</title>
+</head>
+<body>
+    
+<header class="header">
+    <div class="header__item">
+        <div class="header__menu">
+            <img src="./public/images/main_menu.png" alt="">
+        </div>
+        <div class="header__logo">
+            <img src="./public/images/logo.png" alt="">
+        </div>
+    </div>
+
+    <div class="header__item">
+        <div class="header__email orange__line">
+            <img src="./public/images/emile_icon.png" alt="">
+        </div>
+        <div class="header__bell orange__line">
+            <img src="./public/images/bell_icon.png" alt="">
+            <div class="count__bells">2</div>
+        </div>
+        <div class="header__user">
+            <a href="#" class="header__hello">Hello, John!</a>
+            <img src="./public/images/avatar.png" alt="" class="header__avatar">
+        </div>
+        <div class="header__submenu">
+            <img src="./public/images/submenu.png" alt="">
+        </div>
+    </div>
+</header>
+
+<div class="menu main">
+    <div class="menu__main">
+        <img src="./public/images/exit__icon.png" alt="" class="menu__quit">
+        <h1 class="menu__title">Navigation</h1>
+        <div class="menu__item">
+            
+            <a href="#" class="menu__link"><i class="fas fa-user-check"></i> Profile</a>
+            <a href="#" class="menu__link"><i class="far fa-star"></i> Events</a>
+            <a href="#" class="menu__link"><i class="far fa-clipboard"></i>   Tasks</a>
+            <a href="#" class="menu__link"><i class="fas fa-share-alt"></i>   Shared items</a>
+            <a href="#" class="menu__link"><i class="far fa-comment"></i>   Services</a>
+            <a href="#" class="menu__link"><i class="fas fa-cog"></i>   Settings</a>
+            <a href="#" class="menu__link"><i class="fas fa-sign-out-alt"></i>   Log out</a>
+        </div>  
+    </div>
+</div>
+
+<div class="menu sub">
+    <div class="supmenu">
+        <img src="./public/images/exit__icon.png" alt="" class="menu__quit">
+        <h1 class="menu__title">Navigation</h1>
+        <div class="menu__item">
+
+            <a href="#" class="menu__link"><i class="fas fa-user-check"></i> Members</a>
+            <a href="#" class="menu__link"><i class="far fa-star"></i> Events</a>
+            <a href="#" class="menu__link"><i class="far fa-comment-dots"></i> Posts</a>
+            <a href="#" class="menu__link"><i class="far fa-clipboard"></i> Tasks</a>
+            <a href="#" class="menu__link"><i class="fas fa-clipboard-list"></i> Checklists</a>
+            <a href="#" class="menu__link"><i class="far fa-calendar-alt"></i> Duty roster</a>
+            <a href="#" class="menu__link"><i class="fas fa-share-alt"></i> Sharing</a>
+            <a href="#" class="menu__link"><i class="fas fa-copy"></i>Documents</a>
+            <a href="#" class="menu__link"><i class="far fa-life-ring"></i>Helping services</a>
+            <a href="#" class="menu__link"><i class="fas fa-pen"></i>Notes</a>
+        </div>
+    </div>
+</div>
+
+<div class="document">
+    <div class="container">
+        <div class="document__item">
+            <div class="title">
+                <img src="./public/images/title_icon.png" alt="" class="title__icon">
+                <div class="title__text">
+                    <div class="title__name">Document</div>
+                    <div class="title__subname">List Of Your Documents</div>
+                </div>
+
+            </div>
+            <div class="document__search">
+                <input type="text" class="search" placeholder=" ">
+                <div class="search__label">Search</div>
+                <img src="./public/images/search_icon.png" alt="" class="search__icon">
+            </div>
+            
+            <div class="nav">
+                <a href="#" class="nav__text">Home</a>
+                >
+                <a href="#" class="nav__text">Document</a>
+             
+            </div>
+
+            <div class="maket">
+                <img src="./public/images/omc_documents_09.png" alt="" class="maket__icon">
+                <img src="./public/images/omc_documents_11.png" alt="" class="maket__icon">
+            </div>
+               
+        </div> <!-- ./document__item -->
+
+        <div class="share">
+            <div class="share__lists">
+                <div class="select">
+                    <select id="">
+                        <option>Member</option>
+                        <option value="big" >Big</option>
+                        <option value="average" >Average</option>
+                        <option value="small">Small</option>
+                    </select>
+                    <div class="select_arrow"></div>
+                </div>
+
+                <div class="select">
+                    <select id="">
+                        <option>Event</option>
+                        <option value="big">Event 1</option>
+                        <option value="average">Event 2</option>
+                        <option value="event3">Event 3</option>
+                        <option value="event4">Event 4</option>
+                        <option value="event5">Event 5</option>
+                    </select>
+                    <div class="select_arrow"></div>
+                </div>
+
+                <div class="select">
+                    <select id="">
+                        <option>Date</option>
+                        <option value="yesterday">Yesterday</option>
+                        <option value="today">Today</option>
+                        <option value="tomorrow">Tomorrow</option>
+                    </select>
+                    <div class="select_arrow"></div>
+                </div>
+
+            </div>
+
+            <div class="share__btn">
+                <button class="btn">
+                    share checked documents
+                </button>
+            </div>
+        </div>
+
+        <div class="upload">
+            <div class="upload__string">
+                <div class="upload__item">
+                    <div class="upload__title">Documents</div>
+                    <div class="upload__tag">
+                        <img src="./public/images/label_icon.png" alt="" class="upload__label">
+                        <a href="#" class="upload__text">bmw</a>,
+                        <a href="#" class="upload__text">iron</a>,
+                        <a href="#" class="upload__text">skillet</a>,
+                        <a href="#" class="upload__text">ereader</a>,
+                        <a href="#" class="upload__text">kindle</a>
+                    </div>
+                </div>
+
+                <div class="upload__item">
+                    <div class="upload__btn">
+                        <button class="btn btn__gray">
+                            <img src="./public/images/google_drive_icon.png" alt="">
+                            upload from google drive
+                        </button>
+                    </div>
+                    <div class="upload__btn">
+                        <button class="btn btn__gray">
+                            <img src="./public/images/dropbox_icon.png" alt="">
+                            upload from dropbox
+                        </button>
+                    </div>
+                    <div class="upload__btn">
+                        <button class="btn">
+                            upload documents
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="upload__file">
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/jpg_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Photo 2356</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/txt_icon.png" alt="">
+                        </div>
+                        <div class="file__name">BMW X5</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/doc_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Cast Iron Skillet - 10.25-Inch</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/avi_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/jpg_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Photo 2356</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/txt_icon.png" alt="">
+                        </div>
+                        <div class="file__name">BMW X5</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/doc_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Cast Iron Skillet - 10.25-Inch</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>  
+                </div>
+                
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/avi_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/rar_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/mp3_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/xls_ICON.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/pdf_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/rar_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/mp3_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/xls_ICON.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid__item">
+                    <div class="file__item">
+                        <div class="file__icon">
+                            <img src="./public/images/pdf_icon.png" alt="">
+                        </div>
+                        <div class="file__name">Kindle Voyage E-reader</div>
+                        <div class="control-group">
+                            <label class="control control-checkbox">
+                                Sharing
+                                <input type="checkbox" checked="checked" />
+                                <div class="control_indicator"></div>
+                            </label>
+                        </div>
+                        <div class="file__btn">
+                            <button class="btn__file">
+                                Edit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__bar">
+            <div class="bar__item">
+                <img src="./public/images/home_bar.png" alt="" class="bar__icon">
+                <div class="bar__title">Home</div>
+            </div>
+            <div class="bar__item">
+                <img src="./public/images/search_bar.png" alt="" class="bar__icon">
+                <div class="bar__title">Search</div>
+            </div>
+            <div class="bar__item">
+                <img src="./public/images/add_bar.png" alt="" class="bar__icon">
+                <div class="bar__title">Add</div>
+            </div>
+            <div class="bar__item">
+                <img src="./public/images/setting_bar.png" alt="" class="bar__icon">
+                <div class="bar__title">Settings</div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="./public/js/app.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $white;
+    padding: 1rem;
+    box-shadow: 0 1px 10px $gray_btn;
+
+    @media screen and ($mobile-sm) {
+        padding: 0.5rem;
+    }
+}
+
+.header__item {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu {
+    cursor: pointer;
+
+    margin: 0 1rem;
+
+    @media screen and ($mobile-sm) {
+        margin: 0 0.5rem;
+    }
+}
+
+.header__logo {
+    cursor: pointer;
+
+    margin: 0 1rem;
+
+    @media screen and ($mobile-sm) {
+        margin: 0 0.5rem;
+    }
+}
+
+.header__email {
+    position: relative;
+    cursor: pointer;
+
+    padding: 0 1rem;
+    transition: transform 0.2s linear;
+
+    @media screen and ($mobile-sm) {
+        padding: 0 0.5rem;
+        display: none;
+    }
+}
+
+.header__bell {
+    position: relative;
+    cursor: pointer;
+
+    padding: 0.5rem 1rem;
+    transition: transform 0.2s linear;
+
+    @media screen and ($mobile-sm) {
+        padding: 0.5rem;
+        display: none;
+    }
+}
+
+.count__bells {
+    position: absolute;
+    top: 5px;
+    right: 13px;
+    z-index: 2;
+
+    color: $white;
+    font-size: 0.65rem;
+    font-weight: 700;
+    background-color: $orange;
+
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    border-radius: 1.5rem;
+
+}
+
+.orange__line {
+    &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        z-index: 1;
+        background-color: $orange;
+
+        transition: width 0.2s linear;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+
+        &:hover {
+            &:after {
+                width: 2rem;
+            }
+        }
+    }
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    position: relative;
+
+    &:after {
+        content: "";
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+
+        border-radius: 50%;
+        opacity: 0.0;
+        transition: opacity 0.2s linear;
+    }
+
+    &:hover {
+        &:after {
+            opacity: 0.4;
+        }
+    }
+
+    @media screen and ($mobile-sm) {
+        margin: 0 0.5rem;
+    }
+}
+
+.header__hello {
+    display: block;
+    margin-right: 1rem;
+
+    font-size: 1rem;
+    color: $black;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-bottom: 2px solid $white;
+    transition: border-bottom 0.2s linear, color 0.2s linear;
+
+    &:hover {
+        border-bottom: 2px solid $orange;
+        color: $orange;
+    }
+
+    @media screen and ($mobile-sm) {
+        display: none;
+    }
+}
+
+.header__avatar {
+    cursor: pointer;
+}
+
+.header__submenu {
+    cursor: pointer;
+    margin: 0 1rem;
+
+    @media screen and ($mobile-sm) {
+        margin: 0 0.5rem;
+    }
+}

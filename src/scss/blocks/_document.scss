@@ -1,0 +1,28 @@
+.document {
+    margin-top: 8rem;
+}
+
+.document__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and ($tablet) {
+        flex-wrap: wrap;
+    }
+}
+
+.document__search {
+    position: relative;
+    width: 45%;
+
+    @media screen and ($tablet) {
+        width: 50%;
+        margin: 1rem 2rem;
+    }
+
+    @media screen and ($mobile) {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}

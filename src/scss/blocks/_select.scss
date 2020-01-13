@@ -1,0 +1,69 @@
+.select {
+    position: relative;
+    display: inline-block;
+    border-right: 1px solid rgba($color: $gray_text, $alpha: 0.5);
+    width: 32%;
+
+    @media screen and ($mobile-sm) {
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.select select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 11px 12px;
+    outline: 0;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    background: #ffffff;
+    color: #fc9819;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select select::-ms-expand {
+    display: none;
+}
+
+.select select:hover,
+.select select:focus {
+    color: #ef9018;
+    background: #ffffff;
+}
+
+.select select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.select_arrow {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    border: solid #fc9819;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+    @media screen and ($mobile-sm) {
+        right: 10px;
+    }
+}
+
+.select select:hover~.select_arrow,
+.select select:focus~.select_arrow {
+    border-color: #ef9018;
+}
+
+.select select:disabled~.select_arrow {
+    border-top-color: #fc9819;
+}

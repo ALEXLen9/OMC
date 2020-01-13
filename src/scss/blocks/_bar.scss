@@ -1,0 +1,22 @@
+.bar__item {
+    cursor: pointer;
+    width: 7rem;
+    height: 5rem;
+    position: relative;
+    text-align: center;
+    padding-top: 1rem;
+    
+    transition: background-color 0.2s linear;
+
+    &:hover{
+        background-color: $orangehov;
+    }
+}
+
+.bar__title{
+    font-size: 0.86rem;
+    color: $white;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}

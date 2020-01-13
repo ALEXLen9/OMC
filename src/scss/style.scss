@@ -1,0 +1,39 @@
+@import "vars";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+
+    background-color: $gray_bg;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+/*  Blocks  */
+
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/document";
+@import "blocks/title";
+@import "blocks/search";
+@import "blocks/nav";
+@import "blocks/maket";
+@import "blocks/share";
+@import "blocks/btn";
+@import "blocks/upload";
+@import "blocks/file";
+@import "blocks/control";
+@import "blocks/footer";
+@import "blocks/bar";
+@import "blocks/menu";
+@import "blocks/select";
