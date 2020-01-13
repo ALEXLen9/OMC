@@ -24,3 +24,12 @@
         }
     }
 }
+
+.nav__maket {
+    display: flex;
+
+    @media screen and ($tablet) {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
