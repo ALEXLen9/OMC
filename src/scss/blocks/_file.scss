@@ -1,14 +1,16 @@
 .file__item {
-    width: 8rem;
+    width: 100%;
     text-align: center;
-
-    margin: 0 2.66rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 2rem;
 }
 
 .file__icon {
     width: 8rem;
     height: 8rem;
-    background-color: rgba($color: $gray_text, $alpha: 0.1);
+    background-color: $gray_bgicon;
 
     display: flex;
     align-items: center;
@@ -16,6 +18,7 @@
 }
 
 .file__name {
+    width: 100%;
     font-size: 0.92rem;
     font-weight: 600;
     color: $black;
@@ -23,9 +26,9 @@
     padding: 1rem 0;
 }
 
-.file__btn{
-    margin: 1rem;
+.file__btn {
+    margin: 1.2rem 0;
     display: block;
-    width: 75%;
+    width: 65%;
     text-align: center;
 }

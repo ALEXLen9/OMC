@@ -1,8 +1,12 @@
+.upload {
+    box-shadow: 3px 3px 8px rgba($color: $gray_text, $alpha: 0.2);
+}
+
 .upload__string {
     background-color: $white;
     border: 1px solid rgba($color: $gray_text, $alpha: 0.3);
-    border-radius: 0.3rem;
-    box-shadow: 0 1px 10px $gray_btn;
+    border-radius: 0.3rem 0.3rem 0 0;
+    border-bottom: none;
 
     display: flex;
     justify-content: space-between;
@@ -14,13 +18,28 @@
 .upload__item {
     display: flex;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     width: 50%;
 
-    &.item__right {
+    &:first-child {
+        padding: 0.5rem 1.5rem;
+    }
+
+    &:last-child {
         justify-content: flex-end;
 
+        @media screen and ($tablet) {
+            justify-content: center;
+        }
+
+        @media screen and ($mobile) {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
         @media screen and ($mobile-sm) {
+            padding-top: 0;
             justify-content: center;
             width: 100%;
         }
@@ -72,28 +91,33 @@
 }
 
 .upload__btn {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     display: block;
 
     &:first-child {
         margin-left: 0;
     }
 
-    @media screen and ($mobile-sm) {
+    @media screen and ($tablet) {
         padding-top: 0.3rem;
+    }
+
+    @media screen and ($mobile-sm) {
+        margin-left: 0;
+        width: 100%;
     }
 }
 
 .upload__file {
     background-color: $white;
     border: 1px solid rgba($color: $gray_text, $alpha: 0.3);
-    border-radius: 0.3rem;
-    box-shadow: 0 1px 10px $gray_btn;
+    border-radius: 0 0 0.3rem 0.3rem;
     cursor: pointer;
 
     width: 100%;
 
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
@@ -102,15 +126,31 @@
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
     -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
     outline: none !important;
-
-    @media screen and ($mobile) {
-        padding: 1rem 0;
-    }
 }
 
 .grid__item {
-    width: 100%;
+    width: calc(100%/8);
     display: flex;
     justify-content: center;
+
+    @media screen and ($tablet-lg) {
+        width: calc(100%/6);
+    }
+
+    @media screen and ($tablet) {
+        width: calc(100%/4);
+    }
+
+    @media screen and ($mobile) {
+        width: calc(100%/3);
+    }
+
+    @media screen and ($mobile-sm) {
+        width: calc(100%/2);
+    }
+
+    @media screen and ($mobile-smsm) {
+        width: 100%;
+    }
 
 }

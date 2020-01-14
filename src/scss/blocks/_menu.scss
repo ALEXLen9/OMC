@@ -18,8 +18,6 @@
     }
 }
 
-
-
 .menu__main {
     position: fixed;
     top: 0;
@@ -59,7 +57,9 @@
 
 
 .menu__link {
-    display: block;
+    display: flex;
+    align-items: center;
+
     font-size: 1rem;
     font-weight: 600;
     color: $black;
@@ -71,15 +71,17 @@
 
     &:hover {
         color: $orange;
+        div{
+            color: $orange;
+
+            transition: color 0.2s linear;
+            &:before{
+                color: inherit;
+            }
+        }
     }
 }
 
-.fas,
-.far {
-    padding: 0;
-    padding-right: 1rem;
-    margin: 0;
-}
 
 .close-menu-btn {
     cursor: pointer;

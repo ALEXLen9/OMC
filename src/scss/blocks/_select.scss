@@ -1,10 +1,10 @@
 .select {
     position: relative;
-    display: inline-block;
+    display: flex;
     border-right: 1px solid rgba($color: $gray_text, $alpha: 0.5);
     width: 32%;
 
-    @media screen and ($mobile-sm) {
+    @media screen and ($mobile) {
         &:last-child {
             border-right: none;
         }
@@ -43,7 +43,7 @@
 
 .select_arrow {
     position: absolute;
-    top: 13px;
+    top: 40%;
     right: 20px;
     width: 6px;
     height: 6px;
@@ -56,6 +56,7 @@
 
     @media screen and ($mobile-sm) {
         right: 10px;
+        top: 30%;
     }
 }
 

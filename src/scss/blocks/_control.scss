@@ -1,29 +1,29 @@
 .control {
-    font-family: arial;
     display: block;
     position: relative;
-    margin-bottom: 5px;
-    padding-top: 3px;
+    padding-left: 1rem;
     cursor: pointer;
     font-size: 0.92rem;
     font-weight: 400;
     color: $black;
 }
-    .control input {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-    }
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
 .control_indicator {
     position: absolute;
-    top: 2px;
-    left: 0;
+    top: 0;
+    left: -15px;
     height: 20px;
     width: 20px;
     background: #e6e6e6;
     border: 1px solid #d4d1d1;
     border-radius: 0px;
 }
+
 .control:hover input ~ .control_indicator,
 .control input:focus ~ .control_indicator {
     background: #cccccc;
@@ -59,22 +59,7 @@
 .control-checkbox input:disabled ~ .control_indicator:after {
     border-color: #7b7b7b;
 }
-.control-checkbox .control_indicator::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-left: -1.3rem;
-    margin-top: -1.3rem;
-    background: #2aa1c0;
-    border-radius: 3rem;
-    opacity: 0.6;
-    z-index: 99999;
-    transform: scale(0);
-}
+
 @keyframes s-ripple {
     0% {
         transform: scale(0);

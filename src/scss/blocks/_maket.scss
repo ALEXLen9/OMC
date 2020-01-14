@@ -9,6 +9,19 @@
 
     padding: 0 0.5rem;
 
+    &:hover {
+        color: $gray_icon;
+
+        div {
+            color: $gray_icon;
+
+            transition: color 0.2 linear;
+            &:before {
+                color: inherit;
+            }
+        }
+    }
+
     @media screen and ($mobile-sm) {
         &:last-child {
             padding-right: 0;
