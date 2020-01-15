@@ -104,7 +104,29 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const jQuery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\r\n\r\nconst { initMenu } = __webpack_require__(/*! ./menu */ \"./src/js/menu.js\");\r\n\r\nwindow.$ = window.jQuery = jQuery;\r\n\r\ninitMenu();\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("const jQuery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\r\n\r\nconst { initMenu } = __webpack_require__(/*! ./menu */ \"./src/js/menu.js\");\r\nconst { initMaket } = __webpack_require__(/*! ./maket */ \"./src/js/maket.js\");\r\nconst { initList } = __webpack_require__(/*! ./list */ \"./src/js/list.js\");\r\n\r\nwindow.$ = window.jQuery = jQuery;\r\n\r\n\r\ninitMenu();\r\ninitMaket();\r\ninitList();\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/list.js":
+/*!************************!*\
+  !*** ./src/js/list.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\r\nfunction initList () {\r\n    const $list = $('.list');\r\n\r\n    $list.on('click', '.list__delete', (event) => {\r\n        const { target } = event;\r\n        const listItem = target.closest('.list__item');\r\n\r\n        listItem.remove();\r\n    }); //тут дилигоровоніє!\r\n}\r\n\r\nmodule.exports.initList = initList;\n\n//# sourceURL=webpack:///./src/js/list.js?");
+
+/***/ }),
+
+/***/ "./src/js/maket.js":
+/*!*************************!*\
+  !*** ./src/js/maket.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\r\n\r\n\r\nfunction initMaket() {\r\n    const $grid = $(\".icon-grid\");\r\n    const $list = $(\".icon-list\");\r\n\r\n    $grid.on('click', (event) => {\r\n            $('.upload__file').addClass('active');\r\n            $('.upload__list').removeClass('active');\r\n    });\r\n\r\n    $list.on('click', (event) => {\r\n            $('.upload__list').addClass('active');\r\n            $('.upload__file').removeClass('active');\r\n    });\r\n}\r\n\r\n\r\n\r\nmodule.exports.initMaket = initMaket;\n\n//# sourceURL=webpack:///./src/js/maket.js?");
 
 /***/ }),
 

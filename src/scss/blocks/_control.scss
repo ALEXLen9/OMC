@@ -19,14 +19,14 @@
     left: -15px;
     height: 20px;
     width: 20px;
-    background: #e6e6e6;
+    background: #fff;
     border: 1px solid #d4d1d1;
     border-radius: 0px;
 }
 
 .control:hover input ~ .control_indicator,
 .control input:focus ~ .control_indicator {
-    background: #cccccc;
+    background: #ffffff;
 }
 
 .control input:checked ~ .control_indicator {
@@ -34,7 +34,7 @@
 }
 
 .control input:disabled ~ .control_indicator {
-    background: #e6e6e6;
+    background: #fff;
     opacity: 0.6;
     pointer-events: none;
 }

@@ -1,0 +1,52 @@
+.list {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.list__tr {
+    height: 3.5rem;
+
+    color: $gray_text;
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    background-color: $gray_bgicon;
+
+}
+
+.list__th {
+    margin: 0 1rem;
+    border: none;
+}
+
+.list__td {
+    background-color: $white;
+
+    height: 3.5rem;
+    color: $black;
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    align-items: center;
+
+    border-top: 1px solid rgba($color: $gray_text, $alpha: 0.3);
+}
+
+.list__flex {
+    display: flex;
+    align-items: center;
+}
+
+.list__indicator {
+    top: -7px;
+    left: 0;
+}
+
+.list__photo {
+    padding-right: 1rem;
+}
+
+.list__delete {
+    cursor: pointer;
+    padding: 0 1rem;
+}

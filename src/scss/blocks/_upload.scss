@@ -115,8 +115,9 @@
     cursor: pointer;
 
     width: 100%;
+    position: relative;
 
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -126,7 +127,12 @@
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
     -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
     outline: none !important;
+
+    &.active{
+        display: flex;
+    }
 }
+
 
 .grid__item {
     width: calc(100%/8);
@@ -153,4 +159,18 @@
         width: 100%;
     }
 
+}
+
+.upload__list {
+    display: none;
+
+    width: 100%;
+    border: 1px solid rgba($color: $gray_text, $alpha: 0.3);
+    border-radius: 0 0 0.3rem 0.3rem;
+    padding-bottom: 2rem;
+    background-color: $white;
+
+    &.active{
+        display: block;
+    }
 }
